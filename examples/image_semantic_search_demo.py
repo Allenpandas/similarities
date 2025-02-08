@@ -55,10 +55,10 @@ def clip_demo():
 
 if __name__ == "__main__":
     image_fps1 = ['data/image1.png', 'data/image3.png']
-    image_fps2 = ['data/image12-like-image1.png', 'data/image10.png']
-    imgs1 = [Image.open(i) for i in image_fps1]
-    imgs2 = [Image.open(i) for i in image_fps2]
-    corpus_fps = glob.glob('data/*.jpg') + glob.glob('data/*.png')
+#     image_fps2 = ['~/project/mmdetection/data/KITTI-Persons-8_2/Corruption1x/image12-like-image1.png', 'data/image10.png']
+#     imgs1 = [Image.open(i) for i in image_fps1]
+#     imgs2 = [Image.open(i) for i in image_fps2]
+    corpus_fps = glob.glob('~/project/mmdetection/data/KITTI-Persons-8_2/Corruption1x//*.jpg') + glob.glob('data/*.png')
     corpus_imgs = [Image.open(i) for i in corpus_fps]
     # 1. image and text similarity
     clip_demo()
